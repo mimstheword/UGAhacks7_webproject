@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Write your worries away</title>
-    <link rel = "stylesheet" href="../statics/worry_away_css_file.css">
+    <link rel="stylesheet" href="../statics/worry_away_css_file.css">
 
 </head>
 
 <body>
-    <canvas></canvas>
-    <script src="worry_away_js_file.js"></script>
+    <div class="container">
+        <canvas id="canvas" class="canvas"></canvas>
+        <script src="worry_away_js_file.js"></script>
+        <div>
+            <p>Write your worries here</p>
+            <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
 
+            <input type="text" id="venttext">
+            <button id="ventBtn" onclick="javascript:alert('Halp')">enter</button>
+        </div>
 
-
-    <p>Write your worries here</p>
-    <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
-
-    <input type = "text" id = "venttext" >
-    <button id = "ventBtn" onclick="javascript:alert('Halp')">enter</button>
+    </div>
 </body>
+
 </html>
