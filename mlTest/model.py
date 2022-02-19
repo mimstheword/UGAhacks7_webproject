@@ -59,7 +59,7 @@ def checkSuicide(data):
     output = pd.DataFrame(data)
 
 
-    return output["Category"][0]
+    return output
 
 
-checkSuicide("")
+print(checkSuicide(" I suicide myself"))
