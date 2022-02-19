@@ -45,3 +45,25 @@ input[type = text]
      z-index: 1;
      height: 100%;
  }
+
+ .exit-intent-popup {
+    position: fixed;
+    top: 150;
+    left: 200;
+    bottom: 150;
+    right: 200;
+    z-index: 1;
+    background: rgba(32, 32, 32, 0.8);
+    transform: translateY(60%) scale(0);
+}
+
+.exit-intent-popup.visible {
+    transform: translateY(0) scale(1);
+}
+
+.helpline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

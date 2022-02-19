@@ -14,7 +14,6 @@
         <canvas id="canvas" class="canvas"></canvas>
         <script src="{{url_for('static',filename='scripts/textToStar.js')}}"></script>
         <div class = "content">
-            <p>Write your worries here</p>
             <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
 
 
@@ -25,7 +24,13 @@
             <script src="{{url_for('static',filename='scripts/nomenclature.js')}}"></script>
     <button id = "ventBtn" onclick="buttonErase()">enter</button>
 
-    <div class="popup" onclick="popFunction()"> test click <span class = "poptext" id = "popTest">testing</span></div>
+    <div class="exit-intent-popup">
+        <div class="helpline">
+            <b>Testing</b>
+            <p>Another thing for testing</p>
+            <span class="close">x</span>
+        </div>
+    </div>
 </body>
 </html>
 
