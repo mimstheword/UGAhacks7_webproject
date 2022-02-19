@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Write your worries away</title>
-    <link rel="stylesheet" href="../statics/worry_away_css_file.css">
+    <title>Sea of Thoughts</title>
+    <link rel = "stylesheet" href="../statics/worry_away_css_file.css">
+
 
 </head>
 
@@ -16,11 +18,17 @@
             <p>Write your worries here</p>
             <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
 
-            <input type="text" id="venttext">
-            <button id="ventBtn" onclick="javascript:alert('Halp')">enter</button>
-        </div>
 
-    </div>
+    <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
+
+
+    <p></p>
+    <input type = "text" id = "venttext" placeholder="Vent your frustrations here...">
+   
+    <p></p>
+    <button id = "ventBtn" onclick="document.getElementById('venttext').value = ' '">enter</button>
+
+    <div class="popup" onclick="popFunction()"> test click <span class = "poptext" id = "popTest">testing</span></div>
 </body>
-
 </html>
+
