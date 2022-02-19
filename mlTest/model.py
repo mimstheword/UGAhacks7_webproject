@@ -21,8 +21,12 @@ import pickle
 def checkSuicide(data):
     spell_dict = enchant.Dict('en-US')
 
-    test = pd.read_csv('test.tsv', header=0, delimiter="\t", \
-                   quoting=3 )
+
+    test = pd.DataFrame({"id":[42],"category":[0],"tweet":[data]})
+
+
+   # test = pd.read_csv('test.tsv', header=0, delimiter="\t", \
+    #               quoting=3 )
 
 
     with open("vector","rb") as f:
@@ -54,7 +58,8 @@ def checkSuicide(data):
     data = {'id': test['id'], 'Category': result}
     output = pd.DataFrame(data)
 
-    print(output["Category"][0])
+
+    return output["Category"][0]
 
 
 checkSuicide("")
