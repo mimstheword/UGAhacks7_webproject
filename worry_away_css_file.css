@@ -1,0 +1,11 @@
+
+body {
+   /* background-image: url(GrizzlyHacksLogo.png); */
+   background-color: black;
+    background-size: cover;
+
+    color: beige;
+    text-align: center;
+    vertical-align: sub;
+    font-family: "Lucida Handwriting", "Times New Roman", sans-serif;
+}
