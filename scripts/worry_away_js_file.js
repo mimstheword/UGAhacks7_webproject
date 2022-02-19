@@ -1,11 +1,17 @@
 var input = document.getElementById("venttext");
 
-input.addEventListener("keyup", function(en)
+
+input.addEventListener("keyup", function(event)
 {
-    if(en.keyCode === 13)
+    if(event.keyCode === 13)
     {
-        en.preventDefault();
+        event.preventDefault();
         document.getElementById("ventBtn").click();
     }
 })
 
+function popFunction()
+{
+    var popScreen = document.getElementById("popTest");
+    popScreen.classList.toggle("show")
+}
