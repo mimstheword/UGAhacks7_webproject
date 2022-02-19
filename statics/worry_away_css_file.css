@@ -9,3 +9,19 @@ body {
     vertical-align: sub;
     font-family: "Lucida Handwriting", "Times New Roman", sans-serif;
 }
+
+#ventBtn
+{
+    background-color: transparent;
+    border: none;
+    color: beige;
+    font-family: "Lucida Handwriting", "Times New Roman", sans-serif;
+}
+
+input[type = text]
+{
+    border-color: beige;
+    color: bisque;
+    background-color: transparent;
+    width: 90%;
+}
