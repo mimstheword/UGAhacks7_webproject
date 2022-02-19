@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Sea of Thoughts</title>
-    <link rel = "stylesheet" href="../statics/worry_away_css_file.css">
+    <!--<link rel = "stylesheet" href="../statics/worry_away_css_file.css"> -->
+    <link rel = "stylesheet" type="text/css" href = "{{url_for('static',filename='worry_away_css_file.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <canvas id="canvas" class="canvas"></canvas>
-        <script src="textToStar.js"></script>
+        <script src="../static/scripts/textToStar.js"></script>
         <div class = "content">
             <p>Write your worries here</p>
             <!--<img src="GrizzlyHacksLogo.png" alt = "Grizzly Hacks Logo"> -->
@@ -20,7 +22,8 @@
     <input type = "text" id = "venttext" placeholder="Vent your frustrations here...">
    
     <p></p>
-    <button id = "ventBtn" onclick="document.getElementById('venttext').value = ' '">enter</button>
+            <script src="{{url_for('static',filename='scripts/nomenclature.js')}}"></script>
+    <button id = "ventBtn" onclick="buttonErase()">enter</button>
 
     <div class="popup" onclick="popFunction()"> test click <span class = "poptext" id = "popTest">testing</span></div>
 </body>

@@ -29,7 +29,7 @@ def checkSuicide(data):
     #               quoting=3 )
 
 
-    with open("vector","rb") as f:
+    with open("mlTest/vector","rb") as f:
         vectorizer = pickle.load(f)
 
     stop_words = set(stopwords.words("english"))
@@ -50,7 +50,7 @@ def checkSuicide(data):
     test_data_features = vectorizer.transform(clean_test_tweets)
     np.asarray(test_data_features)
 
-    with open("model", "rb") as f:
+    with open("mlTest/model", "rb") as f:
         classifier = pickle.load(f)
 
     result = classifier.predict(test_data_features)
