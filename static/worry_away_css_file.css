@@ -1,5 +1,8 @@
 body, html {
     /* background-image: url(GrizzlyHacksLogo.png); */
+    background-image: url("oceanGif.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #000000;
     margin: 0;
  }
